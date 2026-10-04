@@ -1,6 +1,7 @@
 services:
   - type: web
     name: scroll-hero-section-animation
-    env: static
+    env: node
     buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: echo "Static site ready"
     staticPublishPath: ./dist
